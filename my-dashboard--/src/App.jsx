@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import PrimaryDashboard from './components/PrimaryDashboard'
+import PermanentDrawerRight from './components/PermanentDrawerRight'
+import DataGrid from './components/DataGrid'
 import './App.css'
 
 function App() {
@@ -8,6 +9,11 @@ function App() {
 
   return (
     <>
+    {/* <PrimaryDashboard /> */}
+    <PermanentDrawerRight />
+    <DataGrid />
+
+
      
     </>
   )
