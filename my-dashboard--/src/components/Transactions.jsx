@@ -9,9 +9,16 @@ import TableRow from '@mui/material/TableRow';
 
 export default function Transactions() {
     return (
-        <div id="scroll">
+        <div 
+        id="table"
+        style={{
+            position: "absolute",
+            top: "50%",
+            left: "30%",
+
+        }}>
             <>
-                <Title>Transactions</Title>
+                <Title>Transaction List</Title>
                 <Table size="small" >
                     <TableHead>
                         <TableRow>

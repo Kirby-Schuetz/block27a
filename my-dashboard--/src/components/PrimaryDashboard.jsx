@@ -16,7 +16,8 @@ export default function PrimaryDashboard() {
     }
 
     return (
-        <div className="dash-container">
+        <div 
+        className="dash-container">
             <h1>Transactions</h1>
             <h4>Transactions!</h4>
             <button onClick={handleClick}>Click!</button>

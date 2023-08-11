@@ -11,8 +11,8 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 const drawerWidth = 240;
 
@@ -26,7 +26,7 @@ export default function PermanentDrawerRight() {
       >
         <Toolbar>
           <Typography variant="h6" noWrap component="div">
-            Permanent drawer
+            Welcome to my transactions page!
           </Typography>
         </Toolbar>
       </AppBar>
@@ -57,11 +57,11 @@ export default function PermanentDrawerRight() {
         <Toolbar />
         <Divider />
         <List>
-          {['Transactions', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+          {['Transactions', 'Orders', 'Send Order', 'Menu'].map((text, index) => (
             <ListItem key={text} disablePadding>
               <ListItemButton>
                 <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                  {index % 2 === 0 ? <MonetizationOnIcon /> : <AddShoppingCartIcon />}
                 </ListItemIcon>
                 <ListItemText primary={text} />
               </ListItemButton>
@@ -70,7 +70,7 @@ export default function PermanentDrawerRight() {
         </List>
         <Divider />
         <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
+          {/* {['All mail', 'Trash', 'Spam'].map((text, index) => (
             <ListItem key={text} disablePadding>
               <ListItemButton>
                 <ListItemIcon>
@@ -79,7 +79,7 @@ export default function PermanentDrawerRight() {
                 <ListItemText primary={text} />
               </ListItemButton>
             </ListItem>
-          ))}
+          ))} */}
         </List>
       </Drawer>
     </Box>
