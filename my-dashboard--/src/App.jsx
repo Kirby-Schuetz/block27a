@@ -1,17 +1,16 @@
-import { useState } from 'react'
-// import PrimaryDashboard from './components/PrimaryDashboard'
+
+import PrimaryDashboard from './components/PrimaryDashboard'
 import PermanentDrawerRight from './components/PermanentDrawerRight'
-import DataGrid from './components/DataGrid'
-import './App.css'
+import Transactions from './components/Transactions'
 
 function App() {
   
 
   return (
     <>
-    {/* <PrimaryDashboard /> */}
+    <PrimaryDashboard />
     <PermanentDrawerRight />
-    <DataGrid />
+    <Transactions />
 
 
      
